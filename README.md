@@ -1,4 +1,4 @@
-<div align="center">
+<!-- <div align="center">
 
 ![Continue logo](media/readme.png)
 
@@ -62,4 +62,26 @@ Check out the [contribution ideas board](https://github.com/orgs/continuedev/pro
 
 ## License
 
-[Apache 2.0 © 2023-2024 Continue Dev, Inc.](./LICENSE)
+[Apache 2.0 © 2023-2024 Continue Dev, Inc.](./LICENSE) -->
+
+## Local Setup
+
+Install dependencies
+
+```
+node scripts/install-deps.js  -s
+```
+
+Build the GUI
+
+```
+nvm use 20.11.0 && cd gui && npm run build
+```
+
+Prepackage the VS Code extension
+
+```
+cd extensions/vscode && node scripts/prepackage.js
+```
+
+Press F5 to run the VS Code extension
