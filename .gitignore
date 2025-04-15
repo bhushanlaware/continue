@@ -128,12 +128,11 @@ dmypy.json
 .pyre/
 
 
-**/node_modules
-**/out
-notes.txt
-cached_embeddings.pkl
-.ruff_cache
-codeql
+**/node_modules/
+node_modules/
+**/node_modules/**
+core/vendor/node_modules/
+core/vendor/modules/@xenova/transformers/node_modules/
 
 .DS_Store
 .test
@@ -174,3 +173,7 @@ extensions/.continue-debug/
 
 .continuerules
 **/.continue/assistants/
+/node_modules
+*/node_modules
+**/node_modules
+
